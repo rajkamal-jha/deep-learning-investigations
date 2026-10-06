@@ -59,3 +59,39 @@ rollback_lr_scheduler/
 ├── README.md
 ├── rollback_lr_scheduler.ipynb
 └── RollbackLROnPlateau.py
+```
+
+### Files
+
+* **`rollback_lr_scheduler.ipynb`**
+  Complete experimental notebook containing the setup, training runs,
+  analysis, visualizations, and observations.
+
+* **`RollbackLROnPlateau.py`**
+  Custom rollback-based learning-rate scheduler.
+
+* **`figures/`**
+  Figures generated during the analysis.
+
+* **`results/`**
+  Raw and aggregated experimental results.
+
+* **`report/`**
+  Detailed research-style report containing the methodology, results,
+  discussion, limitations, and conclusions.
+
+## Experiment
+
+The complete investigation covers:
+
+* Rollback vs. standard `ReduceLROnPlateau`
+* Optimizer state reset vs. retention
+* Validation-loss behavior
+* Learning-rate trajectories
+* Rollback events
+* Training-time trade-offs
+* Run-to-run variation
+* A separate regression counterexample
+
+For the complete methodology and discussion, see the
+[research report](report/rollback_lr_scheduler_report.pdf).
